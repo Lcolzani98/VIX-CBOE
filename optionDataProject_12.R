@@ -1,7 +1,7 @@
 ########################################################
 
 # Project number 12: Option data
-# Group: Colzani Luca, Parravicini Andrea, Spigarelli Edoardo
+
 
 # We downloaded from Yahoo finance the data about the s&p 500 options from 20/12/2021 to 28/02/2022.
 # We cleared the data and we are going to upload them on r with the command read.csv
@@ -197,7 +197,7 @@ for(k in 1:nrow(options)){
 
 options <- as.data.frame(cbind(options,parity))
 options <- options[options$parity == TRUE, ]
-options <- rename(options, today = ï..today.x, callType = type.x , callBid = bid.x,
+options <- rename(options, today = Ã¯..today.x, callType = type.x , callBid = bid.x,
                   callAsk = ask.x, callMid = mid.x, putType = type.y, putBid = bid.y, 
                   putAsk = ask.y, putMid = mid.y)
 options <- subset(options, select = -parity)
