@@ -29,7 +29,6 @@ Main function designed
   explained on the vix CBOE whitepaper
 • Contribution : calculate the contribution of a single option to the vix
   Index
-
 • Variance : to compute the variance of the near-term and next-term options
 • VixFormula : to calculate the 30-day weighted average of the variance
   for the near term and the variance for the next term
